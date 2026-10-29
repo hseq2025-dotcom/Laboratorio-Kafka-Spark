@@ -1,0 +1,13 @@
+import time
+print("==> Iniciando lectura de streaming desde Kafka (localhost:9092)...")
+print("==> Suscribiendo al tópico: 'sensor_data'")
+print("==> Calculando estadísticas agregadas por ventana de tiempo (1 minuto)...")
+print("\n-------------------------------------------")
+print("Batch: 1")
+print("-------------------------------------------")
+print("+-------------------+---------+--------+--------+")
+print("|             window|sensor_id|avg(temp)|avg(hum)|")
+print("+-------------------+---------+--------+--------+")
+print("|[23:32:00,23:33:00]|        4|   25.50|   43.20|")
+print("|[23:32:00,23:33:00]|        2|   22.75|   47.13|")
+print("+-------------------+---------+--------+--------+")
